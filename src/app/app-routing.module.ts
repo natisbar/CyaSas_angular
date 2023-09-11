@@ -15,18 +15,27 @@ const routes: Routes = [
     path: 'servicios',
     loadChildren: () => import('./feature/servicios/servicios.module').then(m => m.ServiciosModule)
   },
-  // {
-  //   path: 'nosotros',component:NosotrosComponent
-  // },
   {
-    path: '',
-    redirectTo: 'inicio',
-    pathMatch: 'full'
+    path: 'clientes',
+    loadChildren: () => import('./feature/clientes/clientes.module').then(m => m.ClientesModule)
+  },
+  {
+    path: 'contacto',
+    loadChildren: () => import('./feature/contacto/contacto.module').then(m => m.ContactoModule)
+  },
+  {
+    path: '**',
+    redirectTo: '/inicio',
+    // pathMatch: 'full'
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+              scrollPositionRestoration: 'enabled',
+              anchorScrolling: 'enabled',
+            })
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

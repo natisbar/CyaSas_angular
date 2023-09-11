@@ -13,7 +13,7 @@
                     {{slider.contenido}}
                   </p>
                   <div class="video_service_btn">
-                      <a (click)="redirigir(slider.redireccion)" class="boxed-btn3">{{slider.botonTitulo}}</a>
+                      <a (click)="redirigir('/servicios',slider.redireccion)" class="boxed-btn3">{{slider.botonTitulo}}</a>
                   </div>
               </div>
           </div>
@@ -43,7 +43,7 @@
                   <h3>{{servicio.titulo}}</h3>
                   <div class="hover_content">
                       <div class="hover_content_inner">
-                          <a (click)="redirigir(servicio.redireccion)">
+                          <a (click)="redirigir('/servicios', servicio.redireccion)">
                               <h4>{{servicio.titulo}}</h4>
                               <p>{{servicio.contenido}}</p>
                           </a>
@@ -79,7 +79,7 @@
                       <li> Tecnología y servicios. </li>
                   </ul>
                   <div class="about_btn">
-                      <a class="boxed-btn3" href="about.html">Conócenos</a>
+                      <a class="boxed-btn3" (click)="redirigir('/nosotros', '')">Conócenos</a>
                   </div>
               </div>
           </div>
@@ -97,7 +97,7 @@
                   <p>
                       Con una perspectiva integral y trabajo en equipo, nos enfocaremos en desarrollar esa idea o negocio que tienes.
                   </p>
-                  <a href="contact.html" class="boxed-btn3-white">Contactanos</a>
+                  <a (click)="redirigir('/contacto', '')" class="boxed-btn3-white">Contactanos</a>
               </div>
           </div>
       </div>

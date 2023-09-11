@@ -1,0 +1,92 @@
+<div>
+  <!-- bradcam_area  -->
+  <div class="bradcam_area" style="background-image: url(img/banner/customer_bg.png);">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-12">
+                  <div class="bradcam_text text-center">
+                      <h3>Clientes</h3>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!--/ bradcam_area  -->
+  <!-- ================ certification section start ================= -->
+  <section class="contact-section" style="padding-top: 65px; padding-bottom: 50px;">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <h2 class="contact-title">Solicitud de Certificado</h2>
+              </div>
+              <div class="col-lg-8">
+                  <form class="form-contact contact_form">
+                      <div class="row">
+                          <div class="col-12">
+                              <div class="form-group">
+                                  <label for="certificationType">Tipo de Certificación (*)</label>
+                                  <select class="form-control valid" name="certificationType" id="certificationType" placeholder="Selecciona Tipo de Certificación">
+                                      <option value="" selected>Selecciona Tipo de Certificación</option>
+                                      <option value="CCD">Certificado Consolidado de Deuda</option>
+                                      <option value="CPT">Certificado Consolidado de Pagos a Terceros</option>
+                                      <option value="CSA">Certificado de Socios y Accionistas</option>
+                                      <option value="CEL">Certificado Laboral</option>
+                                      <option value="CET">Certificado Tributario</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col-12">
+                              <div class="form-group">
+                                  <label for="identificationType">Tipo de Identificación (*)</label>
+                                  <select class="form-control valid" name="identificationType" id="identificationType" placeholder="Selecciona Tipo de Documento">
+                                      <option value="" selected>Selecciona Tipo de Documento</option>
+                                      <option value="CC">CC - Cédula de Ciudadanía</option>
+                                      <option value="CE">CE - Cédula de Extranjería</option>
+                                      <option value="NIP">NIP - Número de Identificación Personal</option>
+                                      <option value="NIT">NIT - Número de Identificación Tributaria</option>
+                                      <option value="PAP">PAP - Pasaporte</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col-sm-12">
+                              <div class="form-group">
+                                  <label for="identificationNumber">Número de Identificación (*)</label>
+                                  <input class="form-control valid" name="identificationNumber" id="identificationNumber" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingresa Número de Identificación'" placeholder="Ingresa Número de Identificación">
+                              </div>
+                          </div>
+                          <div class="col-sm-12">
+                              <label>Datos de Contacto (*)</label>
+                              <div class="col-sm-6">
+                                  <div class="form-group">
+                                      <label for="email">Correo electrónico</label>
+                                      <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingresa dirección de correo electrónico'" placeholder="Ingresa dirección de correo electrónico" autocomplete="off">
+                                  </div>
+                              </div>
+                              <div class="col-sm-6">
+                                  <div class="form-group">
+                                      <label for="phone">Teléfono</label>
+                                      <input class="form-control valid" name="phone" id="phone" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingresa número de teléfono celular'" placeholder="Ingresa número de teléfono celular" autocomplete="off" onkeypress='return ValidarNumerico(event)'>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-12" id="errorMessageDiv">
+                              <div class="form-group" style="margin-bottom: 0px;">
+                                  <label id="errorMessageLabel" style="color:red;"></label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-3">
+                              <input type="button" onclick="ValidateForm()" class="button button-contactForm boxed-btn" value="Enviar">
+                          </div>
+                          <div class="col-sm-3">
+                              <div id="loaderSender" class="loader" style="display: none;"></div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ================ certification section end ================= -->
+</div>

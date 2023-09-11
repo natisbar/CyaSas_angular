@@ -12,7 +12,7 @@ const CONTENIDO_SLIDER: SliderContenido[] = [
     "titulo": "¡Impulsa tu negocio!",
     "contenido": "Con gestión multidisciplinar para tus productos y servicios, accede a nuevos mercados o identifica clientes potenciales. El desarrollo comercial es el motor de la empresa, nos encaminaremos a reforzar las ventas, definir nuevas oportunidades y diseñar estrategias de comercialización para seguir creciendo.",
     "botonTitulo": "Mira nuestros servicios",
-    "redireccion": "/service#GrupoNegociosId",
+    "redireccion": "GrupoNegociosId",
     "imgBackground": "../../../../assets/img/gallery/business_up1.png"
   },
   {
@@ -20,7 +20,7 @@ const CONTENIDO_SLIDER: SliderContenido[] = [
     "titulo": "Analiza tus ingresos y declara adecuadamente tus impuestos",
     "contenido": "Expresa aquellas actividades realizadas, así como hechos susceptibles de ser gravados con un determinado impuesto. Refleja la cantidad de ingresos ganados en un año en específico e informa tu situación patrimonial para rendir cuentas al Estado.",
     "botonTitulo": "Mira nuestros servicios",
-    "redireccion": "/service#GrupoTributarioId",
+    "redireccion": "GrupoTributarioId",
     "imgBackground": "../../../../assets/img/gallery/declaracion1.jpg"
   },
   {
@@ -28,7 +28,7 @@ const CONTENIDO_SLIDER: SliderContenido[] = [
     "titulo": "Controla tus estados financieros",
     "contenido": "Supervisaremos información sobre estados financieros y comerciales para analizar y controlar la marcha de la empresa. Daremos informe de auditoría fidedigno y veraz para terceras partes interesadas, documentando con fe pública y total credibilidad la información recolectada.",
     "botonTitulo": "Mira nuestros servicios",
-    "redireccion": "/service#GrupoAuditoriaId",
+    "redireccion": "GrupoAuditoriaId",
     "imgBackground": "../../../../assets/img/gallery/auditoria-externa.jpg"
   }
 ];
@@ -37,21 +37,21 @@ const CONTENIDO_SERVICIOS: ServicioContenido[] = [
   {
     "titulo": "Consultoría Empresarial",
     "contenido": "Aplica estrategias de operación, control, innovación y gestión en los negocios.",
-    "redireccion": "/service#GrupoNegociosId",
+    "redireccion": "GrupoNegociosId",
     "imgBackground": "../../../../assets/img/about/business1.png",
     "icono": "../../../../assets/img/svg_icon/case.svg"
   },
   {
     "titulo": "Consultoría Financiera y Tributaria",
     "contenido": "Haz el análisis y la valoración requerida para la toma de decisiones con beneficio financiero.",
-    "redireccion": "/service#GrupoTributarioId",
+    "redireccion": "GrupoTributarioId",
     "imgBackground": "../../../../assets/img/about/tributaria1.png",
     "icono": "../../../../assets/img/svg_icon/bar-chart.svg"
   },
   {
     "titulo": "Auditoría y Revisoría Fiscal",
     "contenido": "Realiza un peritaje para mantener la gestión contable y administrativa en orden.",
-    "redireccion": "/service#GrupoAuditoriaId",
+    "redireccion": "GrupoAuditoriaId",
     "imgBackground": "../../../../assets/img/about/experts.png",
     "icono": "../../../../assets/img/svg_icon/case.svg"
   }
@@ -86,14 +86,12 @@ export class HomeComponent implements OnInit{
 
   constructor(private router: Router){}
 
-  public redirigir(path: string){
-    this.router.navigate([path]);
+  public redirigir(path: string, id: string){
+    console.log(path + " - " + id);
+    this.router.navigate([path], {fragment: id});
   }
 
   ngOnInit(): void {
-
     this.experiencia = (new Date().getFullYear() - ANO_INICIO).toString();
-    // this.experiencia = "19";
-    console.log(this.experiencia);
   }
 }

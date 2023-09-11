@@ -3539,6 +3539,14 @@ h3 {
   font-size: 16px;
   color: #fff;
 }
+.service_area .single_service .service_hover .hover_content .hover_content_inner p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.hover_content_inner a:hover{
+  cursor: pointer;
+}
 
 /* line 74, ../../Arafath/CL/CL October/213. Business/HTML/scss/_service.scss */
 .service_area .single_service:hover {
