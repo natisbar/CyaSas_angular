@@ -1,0 +1,107 @@
+<!-- SECCIÓN BANNER -->
+<owl-carousel-o [options]="customOptions" >
+  <ng-template carouselSlide *ngFor="let slider of contenidoSliders;">
+    <img src={{slider.imgBackground}} title={{slider.titulo}} class="carousel-image darkened">
+    <div class="container">
+      <div class="row">
+          <div class="col-xl-12">
+              <div class="slider_text ">
+                  <h3>
+                     {{slider.titulo}}
+                  </h3>
+                  <p>
+                    {{slider.contenido}}
+                  </p>
+                  <div class="video_service_btn">
+                      <a (click)="redirigir(slider.redireccion)" class="boxed-btn3">{{slider.botonTitulo}}</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </ng-template>
+</owl-carousel-o>
+
+
+
+<!-- SECCIÓN EXPLORA NUESTROS SERVICIOS -->
+<div class="service_area" style="padding-top: 100px; padding-bottom: 100px;">
+  <div class="container">
+      <div class="row">
+          <div class="col-xl-12">
+              <div class="section_title text-center mb-50">
+                  <h3>Explora Nuestros Servicios</h3>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-md-4" *ngFor="let servicio of contenidoServicios;">
+          <div class="single_service"
+          [style.background-image]="'url(' + servicio.imgBackground + ')'">
+              <div class="service_hover">
+                  <img [src]="servicio.icono" [alt]="servicio.titulo" style="width: 45px; height: 40px;">
+                  <h3>{{servicio.titulo}}</h3>
+                  <div class="hover_content">
+                      <div class="hover_content_inner">
+                          <a (click)="redirigir(servicio.redireccion)">
+                              <h4>{{servicio.titulo}}</h4>
+                              <p>{{servicio.contenido}}</p>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="about_area ">
+  <div class="container-fluid p-0">
+      <div class="row no-gutters align-items-center">
+          <div class="col-xl-6 col-lg-6">
+              <div class="about_image">
+                  <img src="../../../../assets/img/about/experts1.png" alt="">
+              </div>
+          </div>
+          <div class="col-xl-6 col-lg-6">
+              <div class="about_info">
+                  <h3>Expertos en Grandes Negocios</h3>
+
+                  <p>
+                      Nuestros
+                     {{experiencia}} años de experiencia confiable nos permiten apoyar tus procesos gerenciales, financieros, contables y tributarios, siempre pretendiendo el crecimiento de tu negocio de manera efectiva y al menor costo. Así lo demuestra nuestro trabajo con empresas en los sectores:
+                  </p>
+                  <ul style="margin-bottom: 30px;">
+                      <li> Manufactura y Retail. </li>
+                      <li> Agroindustria. </li>
+                      <li> Tecnología y servicios. </li>
+                  </ul>
+                  <div class="about_btn">
+                      <a class="boxed-btn3" href="about.html">Conócenos</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="project_area" style="padding-top: 100px; padding-bottom: 100px;">
+  <div class="container">
+      <div class="row">
+          <div class="col-xl-12">
+              <div class="project_info text-center">
+                  <h3>¿Tienes algún proyecto?</h3>
+                  <p>
+                      Con una perspectiva integral y trabajo en equipo, nos enfocaremos en desarrollar esa idea o negocio que tienes.
+                  </p>
+                  <a href="contact.html" class="boxed-btn3-white">Contactanos</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
