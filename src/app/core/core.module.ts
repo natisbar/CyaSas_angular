@@ -16,6 +16,7 @@ import { HttpGeneralService } from "./services/http-general.service";
     RouterModule
   ],
   exports: [
+    CommonModule,
     NavbarComponent,
     FooterComponent
   ],

@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { SharedModule } from "src/app/shared/shared.module";
 import { ServiciosComponent } from "./components/servicios.component";
 import { ServiciosRoutingModule } from "./servicios-routing.module";
+import { NgxPageScrollCoreModule } from "ngx-page-scroll-core";
 
 @NgModule({
   declarations: [
@@ -10,6 +11,7 @@ import { ServiciosRoutingModule } from "./servicios-routing.module";
   imports: [
     SharedModule,
     ServiciosRoutingModule,
+    NgxPageScrollCoreModule
   ],
   exports: [
   ],

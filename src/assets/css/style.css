@@ -1553,6 +1553,11 @@ h3 {
   transition: 0.3s;
 }
 
+.single_service_wrap a:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* line 121, ../../Arafath/CL/CL October/213. Business/HTML/scss/_about.scss */
 .about_wrap_area.about_wrap_area2 .single_service_wrap:hover {
   background: #28AE60;
@@ -2789,6 +2794,11 @@ h3 {
 /* line 81, ../../Arafath/CL/CL October/213. Business/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget ul li a:hover {
   color: #28AE60;
+  cursor: pointer;
+}
+
+.footer .footer_top .footer_widget h3 a:hover , .footer_logo a:hover{
+  cursor: pointer;
 }
 
 /* line 87, ../../Arafath/CL/CL October/213. Business/HTML/scss/_footer.scss */
