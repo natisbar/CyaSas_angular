@@ -976,6 +976,7 @@ h3 {
   /* line 108, ../../Arafath/CL/CL October/213. Business/HTML/scss/_header.scss */
   .header-area .main-header-area .Appointment .book_btn a {
     padding: 12px 20px;
+    text-decoration: none;
   }
 }
 
@@ -1010,6 +1011,7 @@ h3 {
   font-family: "Poppins", sans-serif;
   position: relative;
   text-transform: capitalize;
+  text-decoration: none;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {

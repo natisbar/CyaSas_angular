@@ -13,7 +13,7 @@
                     {{slider.contenido}}
                   </p>
                   <div class="video_service_btn">
-                      <a (click)="redirigir('/servicios',slider.redireccion)" class="boxed-btn3">{{slider.botonTitulo}}</a>
+                      <a (click)="redirigir('/servicios', slider.redireccion)" class="boxed-btn3">{{slider.botonTitulo}}</a>
                   </div>
               </div>
           </div>
@@ -37,7 +37,7 @@
       <div class="row">
         <div class="col-xl-4 col-md-4" *ngFor="let servicio of contenidoServicios;">
           <div class="single_service"
-          [style.background-image]="'url(' + servicio.imgBackground + ')'">
+              [style.background-image]="'url(' + servicio.imgBackground + ')'">
               <div class="service_hover">
                   <img [src]="servicio.icono" [alt]="servicio.titulo" style="width: 45px; height: 40px;">
                   <h3>{{servicio.titulo}}</h3>
