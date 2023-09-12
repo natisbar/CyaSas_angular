@@ -16,8 +16,8 @@ export class AppComponent {
   ];
 
   public opcionesSubitem: MenuItem[] = [
-    {url: 'consultaria-empresarial', nombre: 'Consultoría empresarial'},
-    {url: 'consultaria-financiera', nombre: 'Consultoría Financiera y Tributaria'},
-    {url: 'auditoria-revisoria', nombre: 'Auditoría y Revisoría Fiscal'}
+    {url: 'GrupoNegociosId', nombre: 'Consultoría empresarial'},
+    {url: 'GrupoTributarioId', nombre: 'Consultoría Financiera y Tributaria'},
+    {url: 'GrupoAuditoriaId', nombre: 'Auditoría y Revisoría Fiscal'}
   ];
 }
