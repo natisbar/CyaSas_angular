@@ -4,6 +4,7 @@ import { RouterModule } from "@angular/router";
 import { FooterComponent } from "./components/footer/footer.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { HttpGeneralService } from "./services/http-general.service";
+import { ModalNotificaciones } from "./services/modal.service";
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HttpGeneralService } from "./services/http-general.service";
     FooterComponent
   ],
   providers: [
-    HttpGeneralService
+    HttpGeneralService,
+    ModalNotificaciones
   ]
 })
 export class CoreModule {}

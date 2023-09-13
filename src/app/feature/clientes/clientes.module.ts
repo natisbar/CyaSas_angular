@@ -4,6 +4,7 @@ import { SharedModule } from "src/app/shared/shared.module";
 import { ClientesComponent } from "./components/clientes.component";
 import { ClientesRoutingModule } from "./clientes-rounting.module";
 import { ReactiveFormsModule } from "@angular/forms";
+import { ClienteService } from "./shared/service/cliente.service";
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ReactiveFormsModule } from "@angular/forms";
     ReactiveFormsModule
   ],
   providers: [
+    ClienteService
   ]
 })
 export class ClientesModule {}

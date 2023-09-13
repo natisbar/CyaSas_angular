@@ -11,9 +11,11 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
   ],
   exports: [
     CommonModule,
-    CarouselModule,
+    CarouselModule
   ],
   providers: [
+  ],
+  declarations: [
   ]
 })
 export class SharedModule {}

@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-// import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
@@ -11,6 +10,7 @@ import { NosotrosModule } from './feature/nosotros/nosotros.module';
 import { ServiciosModule } from './feature/servicios/servicios.module';
 import { ClientesModule } from './feature/clientes/clientes.module';
 import { ContactoModule } from './feature/contacto/contacto.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { ContactoModule } from './feature/contacto/contacto.module';
     HomeModule,
     ServiciosModule,
     ClientesModule,
-    ContactoModule
+    ContactoModule,
+    HttpClientModule
   ],
   exports: [
     BrowserAnimationsModule
