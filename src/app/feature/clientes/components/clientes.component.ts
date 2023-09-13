@@ -9,7 +9,7 @@ import { ModalNotificaciones } from 'src/app/core/services/modal.service';
 
 const SATISFACTORIO_ICON: SweetAlertIcon = 'success';
 const ERROR_ICON: SweetAlertIcon = 'error';
-const SOLICITUD_EXITOSA: string = 'Tu solicitud ha sido recibida exitosamente.';
+const SOLICITUD_EXITOSA: string = 'Tu solicitud ha sido enviada exitosamente.';
 const INFORMACION_INCOMPLETA: string = 'Por favor diligencie todos los campos marcados como obligatorios.';
 const VALOR_POR_DEFECTO: string = "Selecciona Tipo de Certificación";
 const OPTIONS_CERTIFICACION: OptionSelect[] = [
