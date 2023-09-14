@@ -21,7 +21,7 @@
 /* 1. Theme default css */
 /* line 5, ../../Arafath/CL/CL October/213. Business/HTML/scss/theme-default.scss */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -75,7 +75,7 @@ button {
 
 /* line 41, ../../Arafath/CL/CL October/213. Business/HTML/scss/theme-default.scss */
 h1, h2, h3, h4, h5 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #1F1F1F;
 }
 
@@ -107,7 +107,7 @@ p {
   line-height: 28px;
   color: #4D4D4D;
   margin-bottom: 13px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* line 70, ../../Arafath/CL/CL October/213. Business/HTML/scss/theme-default.scss */
@@ -387,7 +387,7 @@ h3 {
   color: #131313;
   display: inline-block;
   padding: 18px 44px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
@@ -423,7 +423,7 @@ h3 {
   color: #fff;
   display: inline-block;
   padding: 14px 27px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
@@ -462,7 +462,7 @@ h3 {
   color: #fff;
   display: inline-block;
   padding: 13px 27px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
@@ -508,7 +508,7 @@ h3 {
   color: #28AE60 !important;
   display: inline-block;
   padding: 14px 31px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
@@ -549,7 +549,7 @@ h3 {
   color: #fff;
   display: inline-block;
   padding: 18px 24px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
@@ -962,14 +962,16 @@ h3 {
 /* line 108, ../../Arafath/CL/CL October/213. Business/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment .book_btn a {
   background: #28AE60;
-  padding: 12px 26px;
-  font-size: 16px;
+  padding: 0.75rem 1.625rem;
+  font-size: 1rem;
   font-weight: 400;
   border: 1px solid transparent;
+  text-decoration: none;
   color: #fff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -997,7 +999,7 @@ h3 {
 .header-area .main-header-area .main-menu ul li {
   display: inline-block;
   position: relative;
-  margin: 0 10px;
+  margin: 0 0.7rem;
 }
 
 /* line 141, ../../Arafath/CL/CL October/213. Business/HTML/scss/_header.scss */
@@ -1008,7 +1010,7 @@ h3 {
   font-weight: 400;
   display: inline-block;
   padding: 0px 0px 0px 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   position: relative;
   text-transform: capitalize;
   text-decoration: none;
@@ -1080,6 +1082,7 @@ h3 {
   -moz-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
+  cursor:pointer;
 }
 
 /* line 207, ../../Arafath/CL/CL October/213. Business/HTML/scss/_header.scss */
@@ -1211,9 +1214,10 @@ h3 {
 
 /* line 303, ../../Arafath/CL/CL October/213. Business/HTML/scss/_header.scss */
 .header-area .header-top_area .short_contact_list ul li a {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   color: #fff;
   margin-left: 50px;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -1293,7 +1297,7 @@ h3 {
 /* line 17, ../../Arafath/CL/CL October/213. Business/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
   color: #FFF;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 50px;
   text-transform: capitalize;
   letter-spacing: 2px;
@@ -2025,7 +2029,7 @@ h3 {
 /* line 103, ../../Arafath/CL/CL October/213. Business/HTML/scss/_gallery.scss */
 .portfolio_details_area .portfolio_details_content p {
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #727272;
   line-height: 28px;
 }
@@ -2906,7 +2910,7 @@ h3 {
   -moz-border-radius: 50%;
   border-radius: 50%;
   line-height: 40px !important;
-  margin-right: 7px;
+  margin-right: 0.7rem;
   color: #FFFFFF;
   line-height: 41px !important;
 }
@@ -3093,7 +3097,7 @@ h3 {
   cursor: pointer;
   display: block;
   float: left;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: normal;
   width: 100% !important;
   /* height: 42px; */
