@@ -7,7 +7,7 @@
 }
 
 .carousel-image.darkened {
-  filter: brightness(0.7); /* Ajusta el valor de brillo según tus preferencias */
+  filter: brightness(0.4); /* Ajusta el valor de brillo según tus preferencias */
 }
 .slider_text{
   position: absolute;
