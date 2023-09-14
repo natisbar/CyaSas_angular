@@ -82,6 +82,9 @@ export class HomeComponent implements OnInit{
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
+    autoplay: true, // Habilita la reproducción automática
+    autoplayTimeout: 5000, // Establece el tiempo de cambio de slide en milisegundos (en este caso, 5 segundos)
+    autoplaySpeed: 1000,
   };
 
   constructor(private router: Router){}
