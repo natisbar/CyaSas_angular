@@ -16,38 +16,24 @@
   <div class="container">
       <div class="row">
           <div class="col-xl-6 col-lg-6">
-              <div class="financial_active owl-carousel" style="padding-top: 30px;">
-                  <div class="single_finalcial_wrap">
-                      <h3>
-                          Desarrollo Comercial<br />
-                      </h3>
-                      <p>Con gestión multidisciplinar para tus productos y servicios, accede a nuevos mercados o identifica clientes potenciales. El desarrollo comercial es el motor de la empresa, nos encaminaremos a reforzar las ventas, definir nuevas oportunidades y diseñar estrategias de comercialización para seguir creciendo.</p>
+            <owl-carousel-o [options]="customOptions" >
+              <ng-template carouselSlide *ngFor="let slider of contenidoSliders;">
+                <div class="container">
+                  <div class="row">
+                      <div class="col-xl-12">
+                          <div class="slider_text ">
+                              <h3>
+                                 {{slider.titulo}}
+                              </h3>
+                              <p>
+                                {{slider.contenido}}
+                              </p>
+                          </div>
+                      </div>
                   </div>
-                  <div class="single_finalcial_wrap">
-                      <h3>
-                          Declaración de Renta, Retención en la Fuente, IVA, e Industria y Comercio
-                      </h3>
-                      <p>Expresa aquellas actividades realizadas, así como hechos susceptibles de ser gravados con un determinado impuesto. Refleja la cantidad de ingresos ganados en un año en específico e informa tu situación patrimonial para rendir cuentas al Estado.</p>
-                  </div>
-                  <div class="single_finalcial_wrap">
-                      <h3>
-                          Consultoría y Asesoría en NIIF, NIC-SP y NIAS
-                      </h3>
-                      <p>Te apoyaremos en el proceso de conversión a los nuevos marcos técnicos normativos en información financiera, con el diseño de manuales de políticas contables específicos para su organización, y en la preparación de Estados Financieros bajo los nuevos marcos técnicos. Te acompañaremos en el proceso de implementación de las Normas Internacionales de Información Financiera – NIIF o Normas Internacionales de Contabilidad para el Sector Público NIC – SP.</p>
-                  </div>
-                  <div class="single_finalcial_wrap">
-                      <h3>
-                          Revisoría Fiscal
-                      </h3>
-                      <p>Te ayudaremos a revisar los procedimientos internos de la empresa, verificando el cumplimiento de normas estatutarias, y leyes que le son aplicables. Brindaremos la confianza al público en general sobre la información representada en la contabilidad y los estados financieros.</p>
-                  </div>
-                  <div class="single_finalcial_wrap">
-                      <h3>
-                          Auditoría Externa
-                      </h3>
-                      <p>Supervisaremos información sobre estados financieros y comerciales para analizar y controlar la marcha de la empresa. Daremos informe de auditoría fidedigno y veraz para terceras partes interesadas, documentando con fe pública y total credibilidad la información recolectada.</p>
-                  </div>
-              </div>
+                </div>
+              </ng-template>
+            </owl-carousel-o>
           </div>
           <div class="col-xl-6 col-lg-6">
               <div class="finance_thumb">

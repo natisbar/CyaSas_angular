@@ -1,0 +1,14 @@
+.owl-prev i, .owl-next i {
+  font-size: 24px;
+}
+
+.owl-nav i, .owl-next i {
+  font-size: 24px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .custom-nav {
+    display: none;
+  }
+}

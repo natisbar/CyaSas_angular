@@ -6,3 +6,8 @@ export interface SliderContenido {
   redireccion: string;
   imgBackground: string;
 }
+
+export interface SliderTexto{
+  titulo: string;
+  contenido: string;
+}
