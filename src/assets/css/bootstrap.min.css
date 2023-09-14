@@ -97,7 +97,8 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: .5rem
+  margin-bottom: .5rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 p {
@@ -124,7 +125,8 @@ dl,
 ol,
 ul {
   margin-top: 0;
-  margin-bottom: 1rem
+  margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 ol ol,
@@ -388,7 +390,7 @@ h4,
 h5,
 h6 {
   margin-bottom: .5rem;
-  font-family: inherit;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   line-height: 1.2;
   color: inherit
@@ -614,7 +616,7 @@ pre code {
 
 @media (min-width:1200px) {
   .container {
-      max-width: 90rem
+      max-width: 71.25rem
   }
 }
 
