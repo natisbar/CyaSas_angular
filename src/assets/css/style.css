@@ -1784,14 +1784,21 @@ h3 {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  left: 40px;
-  font-size: 12px;
+  /* left: 40px; */
+  font-size: 20px;
   line-height: 40px;
   border: 1px solid #D4EFDF;
   left: 0px;
   color: #28AE60;
-  bottom: 0;
+  /* bottom: 0; */
   top: auto;
+  margin: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .financial_solution_area .owl-carousel .owl-nav div {
+    display: none;
+  }
 }
 
 /* line 303, ../../Arafath/CL/CL October/213. Business/HTML/scss/_about.scss */
@@ -1804,13 +1811,14 @@ h3 {
 .financial_solution_area .owl-carousel .owl-nav div.owl-next i {
   position: relative;
   right: 0;
-  top: -1px;
+  top: -5px;
 }
 
 /* line 313, ../../Arafath/CL/CL October/213. Business/HTML/scss/_about.scss */
 .financial_solution_area .owl-carousel .owl-nav div.owl-prev i {
   position: relative;
-  top: -1px;
+  bottom: 0;
+  top: -5px;
   left: -1px;
 }
 
