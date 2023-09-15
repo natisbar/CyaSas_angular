@@ -5,6 +5,9 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { HttpGeneralService } from "./services/http-general.service";
 import { ModalNotificaciones } from "./services/modal.service";
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -14,12 +17,18 @@ import { ModalNotificaciones } from "./services/modal.service";
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatIconModule
   ],
   exports: [
     CommonModule,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    MatButtonModule,
+    MatMenuModule,
+    MatIconModule
   ],
   providers: [
     HttpGeneralService,

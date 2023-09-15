@@ -679,16 +679,6 @@ h3 {
   }
 }
 
-@media (max-width: 767px) {
-  /* line 4, ../../Arafath/CL/CL October/213. Business/HTML/scss/_slick-nav.scss */
-  .mobile_menu {
-    position: absolute;
-    right: 0px;
-    width: 100%;
-    z-index: 9;
-  }
-}
-
 /* line 13, ../../Arafath/CL/CL October/213. Business/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav {
   background: #fff;

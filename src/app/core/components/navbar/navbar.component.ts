@@ -3,6 +3,9 @@ import { MenuItem } from '../../modelos/menu-tems';
 import { Router } from '@angular/router';
 import { DOCUMENT} from '@angular/common';
 import { PageScrollService } from 'ngx-page-scroll-core';
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
 
 const PATH_SERVICIOS = "servicios";
 
