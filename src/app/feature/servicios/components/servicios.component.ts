@@ -48,6 +48,17 @@ export class ServiciosComponent implements OnInit{
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
+    responsive: {
+      0: {
+        items: 1 // Número de elementos a mostrar en pantallas pequeñas (menos de 768px)
+      },
+      768: {
+        items: 1 // Número de elementos a mostrar en pantallas medianas (768px o más)
+      },
+      1024: {
+        items: 1 // Número de elementos a mostrar en pantallas grandes (1024px o más)
+      }
+    }
   };
 
   constructor(private router: ActivatedRoute,

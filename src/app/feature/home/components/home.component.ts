@@ -89,6 +89,17 @@ export class HomeComponent implements OnInit{
     autoplay: true, // Habilita la reproducción automática
     autoplayTimeout: 5000, // Establece el tiempo de cambio de slide en milisegundos (en este caso, 5 segundos)
     autoplaySpeed: 1000,
+    responsive: {
+      0: {
+        items: 1 // Número de elementos a mostrar en pantallas pequeñas (menos de 768px)
+      },
+      768: {
+        items: 1 // Número de elementos a mostrar en pantallas medianas (768px o más)
+      },
+      1024: {
+        items: 1 // Número de elementos a mostrar en pantallas grandes (1024px o más)
+      }
+    }
   };
 
   constructor(private router: Router){}
