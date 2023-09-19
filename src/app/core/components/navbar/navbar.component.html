@@ -61,17 +61,18 @@
                               <mat-icon>menu</mat-icon>
                             </button>
                             <mat-menu #menuHamburguer="matMenu">
-                              <button mat-menu-item [routerLink]="items[0].url">{{items[0].nombre}}</button>
-                              <button mat-menu-item [routerLink]="items[1].url">{{items[1].nombre}}</button>
-                              <button mat-menu-item [routerLink]="items[2].url" [matMenuTriggerFor]="services">{{items[2].nombre}}</button>
-                              <button mat-menu-item [routerLink]="items[3].url">{{items[3].nombre}}</button>
+                              <ng-container *ngFor="let item of items; let i = index">
+                                <button *ngIf="i !== 2" mat-menu-item [routerLink]="item.url">{{item.nombre}}</button>
+                                <button *ngIf="i === 2" mat-menu-item [routerLink]="item.url" [matMenuTriggerFor]="services">{{item.nombre}}</button>
+                              </ng-container>
                               <button mat-menu-item routerLink="/contacto">Contacto</button>
 
                             </mat-menu>
                             <mat-menu #services="matMenu">
-                              <button mat-menu-item (click)="redirigir('/servicios',subitemsServicios[0].url)">{{subitemsServicios[0].nombre}}</button>
-                              <button mat-menu-item (click)="redirigir('/servicios',subitemsServicios[1].url)">{{subitemsServicios[0].nombre}}</button>
-                              <button mat-menu-item (click)="redirigir('/servicios',subitemsServicios[2].url)">{{subitemsServicios[0].nombre}}</button>
+                              <button mat-menu-item *ngFor="let subitem of subitemsServicios;"
+                                      (click)="redirigir('/servicios',subitem.url)">
+                                      {{subitem.nombre}}
+                              </button>
                             </mat-menu>
                           </div>
                       </div>

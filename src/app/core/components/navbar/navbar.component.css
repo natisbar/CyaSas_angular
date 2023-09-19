@@ -1,21 +1,35 @@
-.mat-mdc-icon-button{
+::ng-deep mat-icon{
   color: white;
   border: none;
 }
 
-.mat-mdc-icon-button:hover{
+::ng-deep .mat-mdc-icon-button:hover{
+  color: #28ae60;
+}
+
+::ng-deep .mat-mdc-menu-content{
+  background-color: white!important;
+  /* background-color: white; */
+  font-family: 'Poppins', sans-serif;
+}
+
+::ng-deep .mat-mdc-menu-content, ::ng-deep .mat-mdc-menu-content .mat-mdc-menu-item .mdc-list-item__primary-text, ::ng-deep .mat-mdc-menu-submenu-icon{
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+::ng-deep .mat-mdc-menu-content .mat-mdc-menu-item .mdc-list-item__primary-text:hover{
   color: #28ae60;
 }
 
 .mobile_menu {
   position: absolute;
   right: 30px;
-  /* bottom: 10px; */
+  bottom: 12px;
   z-index: 99;
 }
 
 @media (max-width: 767px) {
-  /* line 4, ../../Arafath/CL/CL October/213. Business/HTML/scss/_slick-nav.scss */
   .mobile_menu {
     display: flex;
     position: absolute;
