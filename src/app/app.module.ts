@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { HomeModule } from './feature/home/home.module';
 import { AppRoutingModule } from './app-routing.module';
-import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { CommonModule, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NosotrosModule } from './feature/nosotros/nosotros.module';
 import { ServiciosModule } from './feature/servicios/servicios.module';
@@ -31,7 +31,7 @@ import { HttpClientModule } from '@angular/common/http';
   exports: [
     BrowserAnimationsModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
