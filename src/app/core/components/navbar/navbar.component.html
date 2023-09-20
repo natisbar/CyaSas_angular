@@ -37,7 +37,7 @@
                               <nav>
                                   <ul id="navigation">
                                       <li *ngFor="let item of items;">
-                                        <a routerLinkActive="active" [routerLink]="item.url" >{{item.nombre}} <i class="ti-angle-down" *ngIf="item.url == 'servicios'"></i></a>
+                                        <a routerLinkActive="active" [routerLink]="item.url" >{{item.nombre}} <i class="fa fa-angle-down" *ngIf="item.url == 'servicios'"></i></a>
                                         <ul class="submenu" *ngIf="item.url == 'servicios'">
                                           <li *ngFor="let subitem of subitemsServicios; let i as index">
                                             <a (click)="redirigir('/servicios',subitem.url)">{{subitem.nombre}}</a>
