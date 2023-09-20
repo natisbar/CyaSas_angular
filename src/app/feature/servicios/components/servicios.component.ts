@@ -67,9 +67,12 @@ export class ServiciosComponent implements OnInit{
 
 
   public redirigirEnMismaPagina(id:string): void {
+    const alturaBarraNavegacion = 105;
+
     this.pageScrollService.scroll({
       document: this.document,
-      scrollTarget: id
+      scrollTarget: id,
+      scrollOffset: alturaBarraNavegacion
     });
   }
 
