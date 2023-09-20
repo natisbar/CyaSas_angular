@@ -3,9 +3,7 @@ import { MenuItem } from '../../modelos/menu-tems';
 import { Router } from '@angular/router';
 import { DOCUMENT} from '@angular/common';
 import { PageScrollService } from 'ngx-page-scroll-core';
-import {MatIconModule} from '@angular/material/icon';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatButtonModule} from '@angular/material/button';
+import * as $ from 'jquery';
 
 const PATH_SERVICIOS = "servicios";
 
@@ -21,6 +19,7 @@ export class NavbarComponent implements OnInit{
               @Inject(DOCUMENT) private document: any){}
 
   ngOnInit(): void {
+    this.evaluarScroll();
   }
 
   @Input()
@@ -42,6 +41,22 @@ export class NavbarComponent implements OnInit{
     this.pageScrollService.scroll({
       document: this.document,
       scrollTarget: id
+    });
+  }
+
+  private evaluarScroll(){
+    $(window).on('scroll', () => {
+      const scroll: number = $(window).scrollTop() || 0;
+      const $stickyHeader = $('#sticky-header');
+      const $backTop = $('#back-top');
+
+      if (scroll < 400) {
+        $stickyHeader.removeClass('sticky');
+        $backTop.fadeIn(500);
+      } else {
+        $stickyHeader.addClass('sticky');
+        $backTop.fadeIn(500);
+      }
     });
   }
 
